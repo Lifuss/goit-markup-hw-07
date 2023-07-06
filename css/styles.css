@@ -1164,6 +1164,10 @@ p {
   margin-bottom: 48px;
 }
 .address-item-phone {
+  margin-bottom: 40px;
+}
+
+.address-item-phone .address-link {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -1171,11 +1175,18 @@ p {
   text-transform: capitalize;
 
   width: 353px;
-  margin-bottom: 40px;
 
   color: var(--specialy-color);
 }
 
+.address-item-email .address-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: #434455;
+}
 .mobile-socials {
   gap: 56px;
   min-width: 40px;
