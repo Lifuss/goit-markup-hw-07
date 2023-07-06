@@ -1165,6 +1165,7 @@ p {
 }
 .address-item-phone {
   margin-bottom: 40px;
+  width: 353px;
 }
 
 .address-item-phone .address-link {
@@ -1173,8 +1174,6 @@ p {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-
-  width: 353px;
 
   color: var(--specialy-color);
 }
