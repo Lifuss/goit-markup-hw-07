@@ -57,9 +57,10 @@
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
+          aria-label="mobile-menu"
         >
           <svg class="hamurger-icon" width="32" height="22">
-            <use href="./images/icons.svg#icon-hamburger"></use>
+            <use href="./images/icons.svg#menu-hamburger"></use>
           </svg>
         </button>
       </div>
@@ -139,28 +140,58 @@
           <h2 class="page-title">What are we doing</h2>
           <ul class="images-list list">
             <li class="images-list-item">
-              <img
-                class="about-image image"
-                src="./images/about/pc-image.jpg"
-                alt="monitor on table"
-                width="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    images/about/feature1_@1x.webp 1x,
+                    images/about/feature1_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="about-image image"
+                  src="./images/about/feature1_@1x.webp"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="images-list-item">
-              <img
-                class="about-image image"
-                src="./images/about/apps-image.jpg"
-                alt="smartphone apps that levitate towards phone"
-                width="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    images/about/feature2_@1x.webp 1x,
+                    images/about/feature2_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="about-image image"
+                  src="./images/about/feature2_@1x.webp"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="images-list-item">
-              <img
-                class="about-image image"
-                src="./images/about/smartpgone.jpg"
-                alt="smartphone"
-                width="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    images/about/feature3_@1x.webp 1x,
+                    images/about/feature3_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="about-image image"
+                  src="./images/about/feature3_@1x.webp"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -172,12 +203,21 @@
           <h2 class="page-title">Our Team</h2>
           <ul class="team-cards-list list">
             <li class="team-cards-list-item">
-              <img
-                class="photo image"
-                src="./images/team/team-card1.jpg"
-                alt="male with short hair"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/Mark@1x.webp 1x,
+                    ./images/team/Mark@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="photo image"
+                  src="./images/team/Mark@1x.webp"
+                  alt="male with short hair"
+                  width="264"
+                />
+              </picture>
               <div class="team-cards-desc">
                 <h3 class="team-cards-name">Mark Guerrero</h3>
                 <p class="team-cards-text">Product Designer</p>
@@ -215,12 +255,21 @@
             </li>
 
             <li class="team-cards-list-item">
-              <img
-                class="photo image"
-                src="./images/team/team-card2.jpg"
-                alt="male looking left"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/Tom@1x.webp 1x,
+                    ./images/team/Tom@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="photo image"
+                  src="./images/team/Tom@1x.webp"
+                  alt="male looking left"
+                  width="264"
+                />
+              </picture>
               <div class="team-cards-desc">
                 <h3 class="team-cards-name">Tom Ford</h3>
                 <p class="team-cards-text">Frontend Developer</p>
@@ -259,12 +308,21 @@
             </li>
 
             <li class="team-cards-list-item">
-              <img
-                class="photo image"
-                src="./images/team/team-card3.jpg"
-                alt="female looking forward"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/Camila@1x.webp 1x,
+                    ./images/team/Camila@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="photo image"
+                  src="./images/team/Camila@1x.webp"
+                  alt="female looking forward"
+                  width="264"
+                />
+              </picture>
               <div class="team-cards-desc">
                 <h3 class="team-cards-name">Camila Garcia</h3>
                 <p class="team-cards-text">Marketing</p>
@@ -303,6 +361,21 @@
             </li>
 
             <li class="team-cards-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/Daniel@1x.webp 1x,
+                    ./images/team/Daniel@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="photo image"
+                  src="./images/team/Daniel@1x.webp"
+                  alt="male looking forward"
+                  width="264"
+                />
+              </picture>
               <img
                 class="photo image"
                 src="./images/team/team-card4.jpg"
@@ -403,7 +476,7 @@
 
     <footer class="footer section">
       <div class="footer-box container">
-        <div class="footer-text">
+        <div class="footer-text-box">
           <a href="./index.html" class="footer-link logo-link margin link">
             Web<span class="footer-logo">Studio</span>
           </a>
@@ -550,6 +623,7 @@
               name="user-privacy"
               id="user-privacy"
               value="true"
+              required
             />
             <label class="modal-form-agreement" for="user-privacy"
               ><span class="modal-form-agreement-desc"
@@ -605,38 +679,36 @@
           >
         </li>
       </ul>
-      <div class="socials-footer">
-        <ul class="mobile-socials socials list">
-          <li class="social-item link">
-            <a href="" class="social-link footer-link link">
-              <svg class="social-icons" width="24" height="24">
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-item link">
-            <a href="" class="social-link footer-link link">
-              <svg class="social-icons" width="24" height="24">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-item link">
-            <a href="" class="social-link footer-link link">
-              <svg class="social-icons" width="24" height="24">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-item link">
-            <a href="" class="social-link footer-link link">
-              <svg class="social-icons" width="24" height="24">
-                <use href="./images/icons.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="mobile-socials socials list">
+        <li class="social-item link">
+          <a href="" class="social-link footer-link link">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item link">
+          <a href="" class="social-link footer-link link">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item link">
+          <a href="" class="social-link footer-link link">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item link">
+          <a href="" class="social-link footer-link link">
+            <svg class="social-icons" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <script src="./js/modal.js"></script>
