@@ -395,6 +395,12 @@ p {
   padding-left: 16px;
   padding-right: 16px;
 }
+@media only screen and (min-width: 1158px) {
+  .features-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .features-list {
   display: flex;
   flex-wrap: wrap;
